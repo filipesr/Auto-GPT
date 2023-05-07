@@ -23,8 +23,9 @@ def prompt_user() -> AIConfig:
 
     # Construct the prompt
     logger.typewriter_log(
-        "Welcome to Auto-GPT! ",
+        "Welcome to Rezende-GPT! ",
         Fore.GREEN,
+        "AI to help any personal task!"
         "run with '--help' for more information.",
         speak_text=True,
     )
@@ -116,8 +117,7 @@ def generate_aiconfig_manual() -> AIConfig:
     logger.typewriter_log(
         "Enter up to 5 goals for your AI: ",
         Fore.GREEN,
-        "For example: \nIncrease net worth, Grow Twitter Account, Develop and manage"
-        " multiple businesses autonomously'",
+        "For example: \nIncrease net worth, Grow Twitter Account, Develop and manage multiple businesses autonomously'",
     )
     logger.info("Enter nothing to load defaults, enter nothing when finished.")
     ai_goals = []

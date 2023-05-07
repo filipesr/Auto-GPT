@@ -4,6 +4,7 @@ version: "3.9"
 
 services:
   auto-gpt:
+    image: significantgravitas/auto-gpt
     depends_on:
       - redis
     build: ./
